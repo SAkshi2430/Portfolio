@@ -573,9 +573,9 @@ footer .social__icon:hover {
 
 @media (max-width: 480px) {
   .skills li {
-    padding: 5px 10px;
-    font-size: 0.8em;
-    min-width: 80px;
+    padding: 8px 12px; /* Reduce padding slightly */
+    font-size: 0.85em; /* Keep the font size readable */
+    min-width: 80px; /* Prevent the bubbles from vanishing */
   }
 }
 
