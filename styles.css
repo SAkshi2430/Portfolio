@@ -534,36 +534,43 @@ footer .social__icon:hover {
 
 .skills {
   list-style: none;
+  padding: 0;
   display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Enables wrapping on smaller screens */
+  justify-content: center;
+  gap: 15px; /* Adds space between items */
 }
 
 .skills li {
-  background-color: #ffffff;
-  padding: 0.5rem 1rem;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  font-size: 0.875rem;
+  background-color: #a855f7;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 1em;
+  text-align: center;
+  min-width: 120px; /* Ensures consistent button width */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-ul li {
-  margin-bottom: 0.5rem;
+.skills li:hover {
+  transform: scale(1.05); /* Adds a subtle hover effect */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .resume-section {
-    padding: 6rem 1rem 3rem 1rem;
+  .skills li {
+    padding: 8px 15px;
+    font-size: 0.9em;
+    min-width: 100px;
   }
+}
 
-  .skills {
-    justify-content: center;
+@media (max-width: 480px) {
+  .skills li {
+    padding: 5px 10px;
+    font-size: 0.8em;
+    min-width: 80px;
   }
 }
 
