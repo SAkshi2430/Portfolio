@@ -533,51 +533,50 @@ footer .social__icon:hover {
 }
 
 .section {
-  overflow: visible;
-  display: block; /* Ensure it's visible */
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
 }
 
 .skills {
-  list-style: none;
-  padding: 0;
   display: flex;
-  flex-wrap: wrap; /* Enables wrapping on smaller screens */
+  flex-wrap: wrap; /* Allow items to wrap for smaller screens */
   justify-content: center;
-  gap: 15px; /* Adds space between items */
+  gap: 10px; /* Add spacing between items */
+  padding: 0;
+  margin: 20px auto;
+  list-style: none; /* Remove bullets */
 }
 
 .skills li {
-  background-color: #a855f7;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 20px;
+  flex: 0 1 auto; /* Prevent shrinking */
+  padding: 10px 15px; /* Spacing inside the bubble */
+  border-radius: 20px; /* Rounded bubbles */
+  background-color: #a855f7; /* Purple background */
+  color: white; /* Text color */
   font-size: 1em;
   text-align: center;
-  min-width: 120px; /* Ensures consistent button width */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
+  transition: transform 0.3s ease; /* Add hover effect */
+  min-width: 100px; /* Ensure bubbles don't collapse */
 }
 
 .skills li:hover {
-  transform: scale(1.05); /* Adds a subtle hover effect */
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .skills li {
-    padding: 8px 15px;
-    font-size: 0.9em;
-    min-width: 100px;
-  }
+  transform: scale(1.1); /* Scale on hover */
+  cursor: pointer; /* Change cursor on hover */
 }
 
 @media (max-width: 480px) {
+  .skills {
+    gap: 8px; /* Slightly reduce gap for smaller screens */
+  }
+
   .skills li {
-    padding: 8px 12px; /* Reduce padding slightly */
-    font-size: 0.85em; /* Keep the font size readable */
-    min-width: 80px; /* Prevent the bubbles from vanishing */
+    padding: 8px 10px; /* Reduce padding for compact view */
+    font-size: 0.9em; /* Slightly smaller text */
+    min-width: 80px; /* Prevent bubbles from disappearing */
   }
 }
+
 
 .achievements__container {
   display: flex;
