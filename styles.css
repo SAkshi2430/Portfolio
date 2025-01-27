@@ -538,6 +538,14 @@ footer .social__icon:hover {
   background-color: #f9f9f9;
 }
 
+.skill__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
 .skills {
   display: flex;
   flex-wrap: wrap; /* Allow items to wrap for smaller screens */
