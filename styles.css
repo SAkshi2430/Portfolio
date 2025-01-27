@@ -532,6 +532,11 @@ footer .social__icon:hover {
   color: #6b7280;
 }
 
+.section {
+  overflow: visible;
+  display: block; /* Ensure it's visible */
+}
+
 .skills {
   list-style: none;
   padding: 0;
